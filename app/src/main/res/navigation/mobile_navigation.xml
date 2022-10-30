@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="edu.itvo.quotes.presentation.view.RandomQuoteFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_quote_random" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="edu.itvo.quotes.presentation.view.AddQuoteFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_add_quote" />
+
+    <fragment
+        android:id="@+id/nav_all_quote"
+        android:name="edu.itvo.quotes.presentation.view.AllQuoteFragment"
+        android:label="@string/all_quote"
+        tools:layout="@layout/fragment_all_quote" />
+
+
+</navigation>
